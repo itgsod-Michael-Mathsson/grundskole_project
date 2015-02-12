@@ -1,5 +1,5 @@
 1.1
-    Kunden är en grundskola från första till femte klass
+    Kunden är en grundskola från första till femte klass.
 
 1.2
 
