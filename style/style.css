@@ -1,0 +1,79 @@
+.header{
+    height: 7vw;
+    background-color: #550065;
+    text-align: center;
+    font-size: 40px;
+    color: lightslategray;
+    font-style: italic;
+    margin: auto;
+    line-height: 7vw;
+}
+
+#front_page_box{
+    margin: 40px;
+    border: solid dimgray 2px;
+    background-color: white;
+    height: 70VH;
+}
+
+
+
+#om_oss_link{
+    border: solid dimgray 2px;
+    position: absolute;
+    top: calc(10vw + 40px);
+    left: 15%;
+    width: 30%;
+    height: 80px;
+    line-height: 80px;
+    font-style: italic;
+    font-size: 25px;
+}
+#personal_link{
+    border: solid dimgray 2px;
+    position: absolute;
+    top: calc(10vw + 40px);
+    right: 15%;
+    width: 30%;
+    height: 80px;
+    line-height: 80px;
+    font-style: italic;
+    font-size: 25px;
+}
+#schema_link{
+    border: solid dimgray 2px;
+    position: absolute;
+    margin-top: 30vh;
+    left: 15%;
+    width: 30%;
+    height: 80px;
+    line-height: 80px;
+    font-style: italic;
+    font-size: 25px;
+
+}
+#sjukanmaelning_link{
+    border: solid dimgray 2px;
+    position: absolute;
+    margin-top: 30vh;
+    right: 15%;
+    width: 30%;
+    height: 80px;
+    line-height: 80px;
+    font-style: italic;
+    font-size: 25px;
+}
+
+#inner_box{
+    height: 80%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    background-color: lightgray;
+}
