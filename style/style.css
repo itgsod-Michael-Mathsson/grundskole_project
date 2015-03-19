@@ -73,6 +73,23 @@
     text-align: center;
 }
 
+#inner_box a{
+    background-color: lightgray;
+    text-decoration: none;
+}
+#inner_box a:link{
+    color: white;
+}
+#inner_box a:visited{
+    color: purple;
+}
+
+#inner_box a:hover{
+    background-color: #e3e3e3 ;
+    color: #a500a5;
+}
+
+
 body{
     margin: 0;
     background-color: lightgray;
