@@ -15,6 +15,12 @@
     background-color: white;
     height: 70VH;
 }
+#sjukanmaelan{
+    margin: 40px;
+    border: solid dimgray 2px;
+    background-color: white;
+    height: 70VH;
+}
 
 #personal_box{
     margin: 40px;
