@@ -16,7 +16,13 @@
     height: 70VH;
 }
 
-
+#personal_box{
+    margin: 40px;
+    border: solid dimgray 2px;
+    background-color: white;
+    height: 70VH;
+    overflow: scroll;
+}
 
 #om_oss_link{
     border: solid dimgray 2px;
@@ -119,6 +125,31 @@
     width: 130px;
     color: darkmagenta;
 }
+
+
+.person{
+    border: solid black 2px;
+    height: 200px;
+    width: 150px;
+    float: left;
+    margin: 30px;
+
+}
+
+.person p{
+    margin: 2px;
+}
+
+.bild_div{
+    width: 98px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+.person_info{
+    text-align: center;
+}
+
 
 body{
     margin: 0;
