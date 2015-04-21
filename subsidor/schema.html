@@ -31,11 +31,16 @@
     </script>
 </head>
 <body>
-    <a id="skriv_ut" type="button" onclick="printImg()" style="display: block">Skriv ut schemat</a>
-    <div id="aarets_schema">
-        <a id="V_term" title="klicka för vårterminens schema" type="button" style="display: block" onclick="displayV_term()" >V-Term</a>
-        <a id="H_term" title="klicka för höstterminens schema" type="button" style="display: block" onclick="displayH_term()" >H-Term</a>
-    </div>
+
+    <table id="schema_knappar">
+        <tr>
+            <td> <a id="skriv_ut" type="button" onclick="printImg()" style="display: block">Skriv ut schemat</a> </td>
+            <td></td>
+            <td></td>
+            <td> <a id="V_term" title="klicka för vårterminens schema" type="button" style="display: block" onclick="displayV_term()" >V-Term</a> </td>
+            <td> <a id="H_term" title="klicka för höstterminens schema" type="button" style="display: block" onclick="displayH_term()" >H-Term</a> </td>
+        </tr>
+    </table>
 
     <div class="printing_img" style="display: none">
         <img id="v-img" src="http://www.novasoftware.se/ImgGen/schedulegenerator.aspx?format=pdf&schoolid=80080/sv-se&type=-1&id=970523-5555&period=&week=16&mode=0&printer=1&colors=2&head=1&clock=1&foot=1&day=0&width=1240&height=1753&count=1&decrypt=0">
@@ -44,10 +49,10 @@
         <img id="h-img" src="http://www.novasoftware.se/ImgGen/schedulegenerator.aspx?format=pdf&schoolid=80080/sv-se&type=-1&id=970523-5555&period=&week=41&mode=0&printer=1&colors=2&head=1&clock=1&foot=1&day=0&width=1240&height=1753&count=1&decrypt=0">
     </div>
 
-    <div id="V_bild">
+    <div class="schema_bild" id="V_bild">
         <img src="http://www.novasoftware.se/ImgGen/schedulegenerator.aspx?format=png&schoolid=80080/sv-se&type=-1&id=970523-5555&period=&week=16&mode=0&printer=0&colors=32&head=0&clock=0&foot=0&day=0&width=1151&height=521&maxwidth=1151&maxheight=521">
     </div>
-    <div id="H_bild" style="display: none">
+    <div class="schema_bild" id="H_bild" style="display: none">
         <img src="http://www.novasoftware.se/ImgGen/schedulegenerator.aspx?format=png&schoolid=80080/sv-se&type=-1&id=970523-5555&period=&week=41&mode=0&printer=0&colors=32&head=0&clock=0&foot=0&day=0&width=1151&height=521&maxwidth=1151&maxheight=521">
     </div>
 
