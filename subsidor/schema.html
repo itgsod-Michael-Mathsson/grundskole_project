@@ -3,15 +3,54 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <script type="text/javascript">
+        function displayH_term(){
+            if(document.getElementById('H_bild') .style.display=='none')
+                {document.getElementById('V_bild') .style.display='none'}
+                {document.getElementById('H_bild') .style.display=''}
+        }
+        function displayV_term(){
+            if(document.getElementById('V_bild') .style.display=='none')
+                {document.getElementById('H_bild') .style.display='none'}
+                {document.getElementById('V_bild') .style.display=''}
+        }
+        var pwin;
+
+        function printImg() {
+            if (document.getElementById('V_bild').style.display == 'none')
+                pwin = window.open(document.getElementById("h-img").src, "_blank");
+                setTimeout("pwin.print()", 2000);
+            if (document.getElementById('H_bild').style.display == 'none')
+                pwin = window.open(document.getElementById("v-img").src, "_blank");
+                setTimeout("pwin.print()", 2000);
+        }
+
+
+
+    </script>
 </head>
 <body>
-    <a id="skriv_ut" type="button" style="display: block">Skriv ut schemat</a>
+    <a id="skriv_ut" type="button" onclick="printImg()" style="display: block">Skriv ut schemat</a>
     <div id="aarets_schema">
-        <a id="V_term" type="button" style="display: block">V-Term</a>
-        <a id="H_term" type="button" style="display: block">H-Term</a>
+        <a id="V_term" title="klicka för vårterminens schema" type="button" style="display: block" onclick="displayV_term()" >V-Term</a>
+        <a id="H_term" title="klicka för höstterminens schema" type="button" style="display: block" onclick="displayH_term()" >H-Term</a>
     </div>
-    <img src="">
-    <img style="display: none" src="">
+
+    <div class="printing_img" style="display: none">
+        <img id="v-img" src="http://www.novasoftware.se/ImgGen/schedulegenerator.aspx?format=pdf&schoolid=80080/sv-se&type=-1&id=970523-5555&period=&week=16&mode=0&printer=1&colors=2&head=1&clock=1&foot=1&day=0&width=1240&height=1753&count=1&decrypt=0">
+    </div>
+    <div class="printing_img" style="display: none;">
+        <img id="h-img" src="http://www.novasoftware.se/ImgGen/schedulegenerator.aspx?format=pdf&schoolid=80080/sv-se&type=-1&id=970523-5555&period=&week=41&mode=0&printer=1&colors=2&head=1&clock=1&foot=1&day=0&width=1240&height=1753&count=1&decrypt=0">
+    </div>
+
+    <div id="V_bild">
+        <img src="http://www.novasoftware.se/ImgGen/schedulegenerator.aspx?format=png&schoolid=80080/sv-se&type=-1&id=970523-5555&period=&week=16&mode=0&printer=0&colors=32&head=0&clock=0&foot=0&day=0&width=1151&height=521&maxwidth=1151&maxheight=521">
+    </div>
+    <div id="H_bild" style="display: none">
+        <img src="http://www.novasoftware.se/ImgGen/schedulegenerator.aspx?format=png&schoolid=80080/sv-se&type=-1&id=970523-5555&period=&week=41&mode=0&printer=0&colors=32&head=0&clock=0&foot=0&day=0&width=1151&height=521&maxwidth=1151&maxheight=521">
+    </div>
+
 
 </body>
 </html>
