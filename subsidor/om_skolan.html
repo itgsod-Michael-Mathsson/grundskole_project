@@ -4,16 +4,44 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <script>
+        function displaychange(knapp_id, sektion_id){
+            {document.getElementById('aktuelt') .style.display='none'}
+            {document.getElementById('datum') .style.display='none'}
+            {document.getElementById('om_skolan') .style.display='none'}
+            {document.getElementById('anlaegningar') .style.display='none'}
+            {document.getElementById('aktuelt_knapp') .style.backgroundColor='darkgray'}
+            {document.getElementById('datum_knapp') .style.backgroundColor='darkgray'}
+            {document.getElementById('om_skolan_knapp') .style.backgroundColor='darkgray'}
+            {document.getElementById('anlaegningar_knapp') .style.backgroundColor='darkgray'}
+            {document.getElementById('aktuelt_knapp') .style.width='110px'}
+            {document.getElementById('datum_knapp') .style.width='110px'}
+            {document.getElementById('om_skolan_knapp') .style.width='110px'}
+            {document.getElementById('anlaegningar_knapp') .style.width='110px'}
+
+            {document.getElementById(sektion_id) .style.display=''}
+            {document.getElementById(knapp_id) .style.backgroundColor='#dfdfdf'}
+            {document.getElementById(knapp_id) .style.width='130px'}
+        }
+
+
+
+    </script>
 </head>
 <body>
     <div class="header"> Them Grundskola</div>
     <div id="side_buttons">
-        <a class="side_buttons" id="aktuelt_knapp" type="button" style="display: block">Aktuelt</a>
-        <a class="side_buttons" id="datum_knapp" type="button" style="display: block">Speciella datum</a>
-        <a class="side_buttons" id="om_skolan_knapp" type="button" style="display: block">Om skolan</a>
-        <a class="side_buttons" id="anlaegningar_knapp" type="button" style="display: block">Anläggningar</a>
+        <a class="side_buttons" id="aktuelt_knapp" type="button" style="display: block" onclick="displaychange('aktuelt_knapp', 'aktuelt')" >Aktuelt</a>
+        <a class="side_buttons" id="datum_knapp" type="button" style="display: block" onclick="displaychange('datum_knapp', 'datum')" >Speciella datum</a>
+        <a class="side_buttons" id="om_skolan_knapp" type="button" style="display: block" onclick="displaychange('om_skolan_knapp', 'om_skolan')" >Om skolan</a>
+        <a class="side_buttons" id="anlaegningar_knapp" type="button" style="display: block" onclick="displaychange('anlaegningar_knapp', 'anlaegningar')" >Anläggningar</a>
     </div>
-    <div class="om_oss" id="aktuelt" >*insert wall of text 1 here*</div>
+
+    <div class="om_oss" id="aktuelt" >
+        <div> det här är ett flöde med aktuella nyheter</div>
+        <div> det här är en gammal nyhet</div>
+        <div> här är en ännu äldre</div>
+    </div>
     <div class="om_oss" id="datum" style="display: none">*insert wall of text 2 here*</div>
     <div class="om_oss" id="om_skolan" style="display: none">*insert wall of text 3 here*</div>
     <div class="om_oss" id="anlaegningar" style="display: none">*insert wall of text 4 here*</div>
