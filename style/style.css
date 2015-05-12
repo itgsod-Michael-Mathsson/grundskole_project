@@ -1,3 +1,28 @@
+#aktuelt div{
+    border: solid black 2px;
+    margin: 2vw;
+}
+
+#aktuelt_knapp{
+    background-color: #dfdfdf;
+    width: 130px;
+    color: darkmagenta;
+}
+
+.bild_div{
+    width: 98px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+#front_page_box{
+    margin: 40px;
+    border: solid dimgray 2px;
+    background-color: white;
+    height: 70VH;
+}
+
 .header{
     height: 7vw;
     background-color: #550065;
@@ -7,73 +32,6 @@
     font-style: italic;
     margin: auto;
     line-height: 7vw;
-}
-
-#front_page_box{
-    margin: 40px;
-    border: solid dimgray 2px;
-    background-color: white;
-    height: 70VH;
-}
-#sjukanmaelan{
-    margin: 40px;
-    border: solid dimgray 2px;
-    background-color: white;
-    height: 70VH;
-}
-
-#personal_box{
-    margin: 40px;
-    border: solid dimgray 2px;
-    background-color: white;
-    height: 70VH;
-    overflow: scroll;
-}
-
-#om_oss_link{
-    border: solid dimgray 2px;
-    position: absolute;
-    top: calc(10vw + 40px);
-    left: 15%;
-    width: 30%;
-    height: 80px;
-    line-height: 80px;
-    font-style: italic;
-    font-size: 25px;
-}
-#personal_link{
-    border: solid dimgray 2px;
-    position: absolute;
-    top: calc(10vw + 40px);
-    right: 15%;
-    width: 30%;
-    height: 80px;
-    line-height: 80px;
-    font-style: italic;
-    font-size: 25px;
-}
-#schema_link{
-    border: solid dimgray 2px;
-    position: absolute;
-    margin-top: 30vh;
-    left: 15%;
-    width: 30%;
-    height: 80px;
-    line-height: 80px;
-    font-style: italic;
-    font-size: 25px;
-
-}
-#sjukanmaelning_link{
-    border: solid dimgray 2px;
-    position: absolute;
-    margin-top: 30vh;
-    right: 15%;
-    width: 30%;
-    height: 80px;
-    line-height: 80px;
-    font-style: italic;
-    font-size: 25px;
 }
 
 #inner_box{
@@ -101,12 +59,91 @@
     color: #a500a5;
 }
 
-
 .om_oss{
     width: 70%;
     background-color: white;
     border: solid dimgray 2px;
     margin: 30px 10% 40px calc(130px + 5vw);
+}
+
+#om_oss_link{
+    border: solid dimgray 2px;
+    position: absolute;
+    top: calc(10vw + 40px);
+    left: 15%;
+    width: 30%;
+    height: 80px;
+    line-height: 80px;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.person{
+    border: solid black 2px;
+    height: 200px;
+    width: 150px;
+    float: left;
+    margin: 30px;
+
+}
+
+.person p{
+    margin: 2px;
+}
+
+.person_info{
+    text-align: center;
+}
+
+#personal_box{
+    margin: 40px;
+    border: solid dimgray 2px;
+    background-color: white;
+    height: 70VH;
+    overflow: scroll;
+}
+
+#personal_link{
+    border: solid dimgray 2px;
+    position: absolute;
+    top: calc(10vw + 40px);
+    right: 15%;
+    width: 30%;
+    height: 80px;
+    line-height: 80px;
+    font-style: italic;
+    font-size: 25px;
+}
+
+#schema_link{
+    border: solid dimgray 2px;
+    position: absolute;
+    margin-top: 30vh;
+    left: 15%;
+    width: 30%;
+    height: 80px;
+    line-height: 80px;
+    font-style: italic;
+    font-size: 25px;
+}
+
+#sjukanmaelan{
+    margin: 40px;
+    border: solid dimgray 2px;
+    background-color: white;
+    height: 70VH;
+}
+
+#sjukanmaelning_link{
+    border: solid dimgray 2px;
+    position: absolute;
+    margin-top: 30vh;
+    right: 15%;
+    width: 30%;
+    height: 80px;
+    line-height: 80px;
+    font-style: italic;
+    font-size: 25px;
 }
 
 #side_buttons{
@@ -126,35 +163,45 @@
     border-top-right-radius: 25px;
     color: purple;
 }
-#aktuelt_knapp{
-    background-color: #dfdfdf;
-    width: 130px;
-    color: darkmagenta;
+
+
+
+
+#schema_knappar{
+    float: right;
+    margin-right: 5vw;
 }
 
+#skriv_ut{
+    color: dodgerblue;
+    text-decoration: underline;
+}
 
-.person{
-    border: solid black 2px;
-    height: 200px;
-    width: 150px;
-    float: left;
-    margin: 30px;
+#V_term{
+    background-color: #EDEDED;
+    border: solid gray 2px;
+    padding: 5px;
+    border-bottom-color: lightgrey;
+}
+
+#H_term{
+    background-color: lightgrey;
+    border: solid gray 2px;
+    padding: 5px;
+    border-bottom-color: lightgrey;
 
 }
 
-.person p{
-    margin: 2px;
-}
-
-.bild_div{
-    width: 98px;
+.schema_bild{
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 20px;
+    width: 90vw;
 }
-.person_info{
-    text-align: center;
+
+.schema_bild img{
+    width: 100%;
 }
+
 
 
 body{
